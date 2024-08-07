@@ -1,0 +1,95 @@
+/* UNIVERSAL */
+*{
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Nunito", sans-serif, !important;
+  
+
+}
+
+/* NAVBAR ONLY */
+#navbar {
+  font-weight: 1000;
+  font-size: 20px;
+}
+
+#navbar .nav-link {
+  color: rgb(255, 255, 255);
+}
+
+#navbar .nav-link:hover {
+  color: #b8b8b8;
+}
+
+#navbar .navbar-brand {
+  color: rgb(255, 150, 44);
+  font-size: 2rem;
+}
+
+
+/* CAROUSEL */
+.carousel-item {
+  overflow: hidden;
+}
+
+.carousel-item img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  
+}
+
+
+
+/* MAIN SECTION */
+.lead {
+  margin-bottom: 0; 
+  text-align: justify; 
+}
+
+.blockquote-footer {
+  margin-top: 0.5rem; 
+}
+
+/* IMAGE */
+.img-band {
+  margin-bottom: 0; 
+}
+
+.img-fluid {
+  width: 100%; 
+  height: auto; 
+}
+
+/* FOOTER */
+.footer a {
+  text-decoration: none;
+}
+.footer .row {
+  justify-content: center;
+}
+
+
+
+
+/* MEDIA FOR RESPONSIVE */
+@media (max-width: 1200px) {
+  .img-fluid {
+    width: 100%; 
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+@media (min-width: 3840px) {
+  .img-fluid {
+    width: 100%; 
+  }
+}
+
+
+
+

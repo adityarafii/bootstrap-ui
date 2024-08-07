@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Music</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">Music</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#history">History</a>
+            <a class="nav-link" href="#information">Information</a>
+          </div>
+
+          <!-- DROPDOWN TOGGLE DARK MODE AND LIGHT MODE -->
+          <div class="dropdown ms-auto d-none d-lg-block">
+            <button
+              class="btn nav-link dropdown-toggle theme"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i
+                class="bi bi-circle-half theme-icon-active"
+                data-theme-icon-active="bi-circle-half"
+              ></i>
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-end-desktop"
+            >
+              <li>
+                <button
+                  class="dropdown-item d-flex align-items-center"
+                  type="button"
+                  data-bs-theme-value="dark"
+                >
+                  <i
+                    class="bi bi-moon-stars me-2 opacity-50"
+                    data-theme-icon="bi-moon-stars"
+                  ></i>
+                  Dark
+                </button>
+              </li>
+              <li>
+                <button
+                  class="dropdown-item d-flex align-items-center"
+                  type="button"
+                  data-bs-theme-value="light"
+                >
+                  <i
+                    class="bi bi-sun me-2 opacity-50"
+                    data-theme-icon="bi-sun"
+                  ></i>
+                  Light
+                </button>
+              </li>
+              <li>
+                <button
+                  class="dropdown-item d-flex align-items-center"
+                  type="button"
+                  data-bs-theme-value="auto"
+                >
+                  <i
+                    class="bi bi-circle-half me-2 opacity-50"
+                    data-theme-icon="bi-circle-half"
+                  ></i>
+                  Auto
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- Dropdown toggle mode menu on mobile -->
+          <div class="dropdown d-lg-none">
+            <button
+              class="btn nav-link dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i
+                class="bi bi-circle-half theme-icon-active"
+                data-theme-icon-active="bi-circle-half"
+              ></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-start">
+              <li>
+                <button
+                  class="dropdown-item d-flex align-items-center"
+                  type="button"
+                  data-bs-theme-value="dark"
+                >
+                  <i
+                    class="bi bi-moon-stars me-2 opacity-50"
+                    data-theme-icon="bi-moon-stars"
+                  ></i>
+                  Dark
+                </button>
+              </li>
+              <li>
+                <button
+                  class="dropdown-item d-flex align-items-center"
+                  type="button"
+                  data-bs-theme-value="light"
+                >
+                  <i
+                    class="bi bi-sun me-2 opacity-50"
+                    data-theme-icon="bi-sun"
+                  ></i>
+                  Light
+                </button>
+              </li>
+              <li>
+                <button
+                  class="dropdown-item d-flex align-items-center"
+                  type="button"
+                  data-bs-theme-value="auto"
+                >
+                  <i
+                    class="bi bi-circle-half me-2 opacity-50"
+                    data-theme-icon="bi-circle-half"
+                  ></i>
+                  Auto
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL/SLIDES FROM IMAGE -->
+    <div
+      id="carouselExampleDark"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2600">
+          <img
+            src="assets/band2.jpg"
+            class="d-block w-100 p-3 rounded-5"
+            alt="Slide 1"
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="2600">
+          <img
+            src="assets/band.jpg"
+            class="d-block w-100 p-3 rounded-5"
+            alt="Slide 2"
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="2600">
+          <img
+            src="assets/konser.jpg"
+            class="d-block w-100 p-3 rounded-5"
+            alt="Slide 3"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- SECTION CLASS/ MAIN ITEM FROM WEB -->
+    <section class="container-fluid px-4 py-2 align-items-center" id="home">
+      <h1 class="fs-2">Music</h1>
+      <p class="lead fs-5">
+        Music is the arrangement of sound to create some combination of form,
+        harmony, melody, rhythm, or otherwise expressive content. Music is
+        generally agreed to be a cultural universal that is present in all human
+        societies. Definitions of music vary widely in substance and approach.
+        While scholars agree that music is defined by a small number of specific
+        elements, there is no consensus as to what these necessary elements are.
+        Music is often characterized as a highly versatile medium for expressing
+        human creativity. Diverse activities are involved in the creation of
+        music, and are often divided into categories of composition,
+        improvisation, and performance. Music may be performed using a wide
+        variety of musical instruments, including the human voice. It can also
+        be composed, sequenced, or otherwise produced to be indirectly played
+        mechanically or electronically, such as via a music box, barrel organ,
+        or digital audio workstation software on a computer.
+      </p>
+
+      <figure class="mt-4">
+        <figcaption class="blockquote-footer">
+          Source From <cite title="Source Title">Wikipedia</cite>
+        </figcaption>
+      </figure>
+
+      <!-- HISTORY -->
+      <div class="row mt-1 py-1" id="history">
+        <!-- First Section -->
+        <div class="col-lg-6 d-flex align-items-center">
+          <img
+            src="assets/band.jpg "
+            alt=""
+            class="img-fluid rounded-4 shadow-lg mb-5 rounded"
+          />
+        </div>
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h2 class="pt-2 fs-2" id="history">History</h2>
+          <p class="lead text-justify fs-5">
+            Music has been an integral part of human culture for thousands of
+            years. Archaeological evidence suggests that humans have been making
+            music since prehistoric times, with flutes made from bones
+            indicating that music existed at least 40,000 years ago. In ancient
+            civilizations such as Mesopotamia, Egypt, Greece, and Rome, music
+            played a significant role in religious ceremonies and entertainment.
+            Ancient Greek music, in particular, was heavily influenced by
+            mathematical theory and philosophy.
+          </p>
+        </div>
+      </div>
+
+      <!-- INFORMATION -->
+      <div class="row mt-1" id="information">
+        <!-- Second Section -->
+        <div class="col-lg-6 d-flex align-items-center order-lg-2 order-1">
+          <img
+            src="assets/band.jpg"
+            class="img-fluid rounded-4 mt-4 shadow-lg mb-5 rounded"
+          />
+        </div>
+        <div
+          class="col-lg-6 d-flex flex-column justify-content-center order-lg-1 order"
+        >
+          <h2 class="pt-4 mt-3 text-center text-lg-start fs-2">
+            Mega Music Fest
+          </h2>
+          <p class="lead text-justify fs-5">
+            Mega Music Fest 2024 is one of the biggest and most anticipated
+            music events of the year. It will be held on September 15, 2024, at
+            the Main Stadium in Jakarta. This festival will feature performances
+            from a range of renowned artists, both local and international. The
+            festival promises an extraordinary music experience with live
+            performances from top musicians and bands that will delight your
+            ears. From pop and rock to electronic genres, Mega Music Fest offers
+            something special for every music lover.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICELIST -->
+    <div class="border-top pt-2 mt-5"></div>
+    <div class="container my-5">
+      <h2 class="text-center mb-4">Mega Music Fest Ticket Prices</h2>
+      <table class="table table-striped text-center">
+        <thead>
+          <tr>
+            <th>Ticket Type</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>General Admission</td>
+            <td>Access to the general festival area.</td>
+            <td>Rp500.000</td>
+          </tr>
+          <tr>
+            <td>VIP</td>
+            <td>Access to VIP area, additional amenities, and meet & greet.</td>
+            <td>Rp1.500.000</td>
+          </tr>
+          <tr>
+            <td>Early Bird</td>
+            <td>Discounted ticket for early purchase.</td>
+            <td>Rp400.000</td>
+          </tr>
+          <tr>
+            <td>Full Festival Pass</td>
+            <td>Access to all events during the festival.</td>
+            <td>Rp2.000.000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- BUTTON PRICE -->
+      <div class="d-grid gap-2 container-fluid">
+        <a
+          href="ticket.html"
+          class="btn btn-active btn-outline-secondary mb-3"
+          role="button"
+          >Grab Your Ticket Now!</a
+        >
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer text-center bg-gradient pt-2 mb-5 pb-2">
+      <div class="container">
+        <div class="row">
+          <!-- Contact-->
+          <div class="col-md-4 mb-4 mb-md-0 text-center">
+            <h5>Contact Us</h5>
+            <p>
+              <a
+                href="#"
+                class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover"
+                >MusicCenter@gmail.com</a
+              ><br />
+              <a
+                href="#"
+                class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover"
+                >+62 999 999</a
+              ><br />
+              <i class="bi bi-geo-alt-fill"></i> Indonesia
+            </p>
+          </div>
+
+          <!-- Social Media -->
+          <div class="col-md-4 text-center">
+            <h5>Social Media</h5>
+            <div class="social-icons mb-4">
+              <a
+                href="https://facebook.com"
+                class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://x.com/"
+                class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="https://instagram.com"
+                class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="https://youtube.com"
+                class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright
+        <div class="mt-4">
+          <p>&copy; 2024 Music Center. All rights reserved.</p>
+        </div> -->
+      </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/function.js"></script>
+  </body>
+</html>
